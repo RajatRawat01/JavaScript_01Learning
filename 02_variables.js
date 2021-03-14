@@ -172,3 +172,73 @@ console.log(data1);
 }
 
 console.log(data1);
+
+
+//Var vs let
+
+var data = 100;
+var data = 200;
+console.log(data); // But var : 200 
+//To overcome this debug we will use let
+// let data1 = 100;
+// let data1 = 200;
+//Error// let:200
+
+// var allows duplicate variable and let not allow duplicate variable.
+
+//declaration and initialization.
+//access the variable 
+
+var data2 = 100; 
+console.log(data);
+
+// gives 100.
+
+// But 
+console.log(data);
+var data2 = 100; // gives undefined.---> var:undefined---->this error is called variable hoisting
+
+//we can overcome variable hoisting by let keyword.
+//accessing the variables with undefined value, bfore its declaration and initialixation called as variable hoisting.
+
+
+
+for(var i=0; i<5; i++)
+{
+    setTimeout(()=> {
+        console.log(i);
+    },5000);
+}; // output: 5 5 5 5 5
+
+// How to overcome this error..by using let keyword.
+//use "let " keyword.
+
+
+
+/**************************************************************************** 
+      Var                                               let
+  Var Keyword introduced in ES1                        let keyword introduced in ES6
+  duplicate Variable allowed.                          wont allow duplicate variable.
+  global polluting issue raised,                      we can overcome global polluting issue.
+  variable hoisting issue raised.                    we can overcome variable hoisting issue.
+  scope rule break by var keyword.                    scope rule obey by let keyword.
+
+/*******************************************************************************/
+
+
+//const 
+//we cant modify the data (const).
+//ES6 
+const data = 100;
+console.log(data);//100
+data=200; //not possible coz const data=100;
+
+
+const obj1 = {wish:"ReactJS"};
+console.log(obj1); //  
+obj1 = {}; // Assignment to constant variable.
+
+// complete change is not posible , internal object we can change.
+
+obj1.wish = "Welcome to Es11";
+console.log(obj1);
