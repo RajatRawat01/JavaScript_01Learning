@@ -1,0 +1,103 @@
+<!-- function
+---------
+
+- particular business logic called as function.
+- function are used to reuse the business.
+- we have following types of functions upto ES11.
+
+1.) Named functions
+2.) Anonymous functions/ Arro Funtions/ Fat Arrow functions/ Callback functions
+/ lambda functions.
+3.) Rest Parameters in Functions.
+4.) Optional Parameters is Functions.
+5.) Default Paramters in functions.
+6.) default Parameters in Functions.
+6.) IIFE (Immidiate Invokable Functional Exprssions)
+7.) 
+
+
+
+Syntax/
+
+function definition
+-----------------------
+
+function functionname(paramters)
+{
+   // business logic
+
+};
+
+//call the function
+functionname(parameters)
+-->
+
+
+<!-- <script>
+
+    function fun_one()
+    {
+        return "welcome to named functions";
+
+    };
+
+    <!-- console.log(fun_one);//---> function definition
+
+    console.log(fun_one());// output -->
+
+
+
+
+<!-- </script>  -->
+
+
+
+<!-- <script>
+function fun_one(arg1, arg2, arg3)
+{
+    return `${arg1} <=> ${arg2} <=> ${arg3}`;
+};
+
+console.log(fun_one()); // undefined undefined undefined
+
+console.log(fun_one(null,null,null));
+console.log(fun_one("Anu","DB", "Veu"));
+
+ </script>    -->
+<!-- 
+<script>
+function func_one()
+{
+    return fun_two;
+};
+function fun_two()
+{
+    return "Hello";
+};
+console.log(fun_one() ()); //hello 
+  </script> -->
+
+
+
+<script> 
+
+let arr = [];
+
+function fun_one();
+{
+    return "Hello";
+};
+
+for(var i = 0; i<5; i++)
+{
+    arr.push(fun_one);
+
+};
+
+console.log(arr.length);
+
+arr.forEach((element,index)=> {
+    console.log(element());
+});
+//console.log(arr[0](), );
+</script>
