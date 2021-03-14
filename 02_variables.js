@@ -84,3 +84,91 @@ console.log(undefined === undefined);
 console.log(null == null);
 console.log(null === null);
 console.log(undefined == null);
+// mobile not working = not working return true.
+console.log(undefined === null);
+// not working = not wokring
+// mobile = not mpbile //mismatch so return false.
+
+//array
+//collection of indexed and hetrogenous elements is called array.
+//[] 
+// How to iterate arry.
+//forEach() use in (ES6).
+
+var arr1 = [10,20,30,40,50];
+var arr2 = [60,70,80,90,100];
+
+arr1.forEach((element,index)=>{
+
+    console.log(element, arr2[index]);
+} );
+
+
+var f_subs = [`Angular`, `reactJs`, `VueJS`];
+var b_subs = [`NodeJs`, `Deno`, `SpringBoot`];
+
+f_subs.forEach((element, index)=>{
+console.log(element, b_subs[index]);
+});
+
+
+// JSON
+//JavaScript Object Notation
+//Json, used to transfer the data over the internet/
+//Json is light weight
+//Json is easy to parse.
+
+//Objects....> {} arrays--> []  data----> key^value pair,
+//keys^valyes separated by ":", pairs separated by using ",".
+
+
+var obj = {
+    sub_one: "react",
+    sub_two: "Nodejs",
+    sub_three: "MongoDB"
+
+};
+
+console.log(obj.sub_one,obj.sub_two,obj.sub_three);
+
+
+for(var i=0;i<5;i++)
+{
+    console.log(i);
+}
+
+console.log(i);//var:5
+
+
+//use let in place of var
+
+//var keyword breaks the scope rule.
+//let keword follows the scope rule.
+
+//global variable
+// var data = 100;
+// console.log(data);
+
+// //block
+// {
+//     //local variable
+//     var data  = 200;
+//     console.log(data);
+// }
+
+// console.log(data);
+//let : 100, //var:200
+//use let to reduce bug..in place of var.
+
+
+let data1 = 100;
+console.log(data1);
+
+//block
+{
+    //local variable
+    let data1  = 200;
+    console.log(data1);
+}
+
+console.log(data1);
