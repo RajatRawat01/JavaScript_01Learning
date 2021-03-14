@@ -1,0 +1,44 @@
+-JS is Scripting Language.
+-Current version of  JS is ES11 (ES2020).
+
+-ES stands for ECMA Script.
+
+-We will excute JS with the help of browsers or "node" tool.
+
+-Ex. Google chrome.
+ Mozilla
+ Opera
+Netscape
+----
+----
+----
+
+- node tool present in nodeJs.
+-Intrepretor present in Browser Engine help to execute JS line by line.
+
+-Execute code line by line is Synchronous in JS.
+
+-we will save JS file with .js extension.
+
+-Recommended IDE to develop JS is VisualStudio.
+VScode given by Microsoft , and open source.
+
+JavaScript is not Object orinented , its object based.
+
+
+What is Object based ?
+Netscape provide so many ready made objects*(predefined) and happiely we can use those objects.
+1. window object.
+2. date object.
+3. console objects.
+4. document objects.
+5. time objects.
+
+
+1. Download and install NodeJs.
+
+"node" is the tool present in NodeJS helps to execute browsers.
+msi stands for Microsoft installer.
+
+2. Download Visual Studio.
+
