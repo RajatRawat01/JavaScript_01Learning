@@ -76,7 +76,7 @@ function fun_two()
 };
 console.log(fun_one() ()); //hello 
   </script> -->
-
+<!-- 
 
 
 <script> 
@@ -100,4 +100,145 @@ arr.forEach((element,index)=> {
     console.log(element());
 });
 //console.log(arr[0](), );
+</script> -->
+
+<!-- 
+Anonomous function
+- The function without name is called anonmous function.
+- anonmous function also called as Arrow function/ Fat arrow functions/lambda functions/callback function.
+- we will repsent anonmous function using arrow sympbol '=>' .
+- anonmous functions are secured as compared to others.
+Anonymous function introduced inb ES6 version.
+
+Syntax.
+----------
+//function defintion
+var/let/const variablename = ()=>{
+
+    //buisness logic
+};
+
+//function calling
+variablename()
+-->
+
+
+
+<!-- <script>
+    let func_one = ()=> {
+
+     return "welcome to arrow function."
+    
+    };
+    console.log(func_one); //func definition
+    console.log(func_one()); //output
 </script>
+ -->
+
+
+
+ <!-- Arrow function with parameters -->
+ <!-- <script>
+     let fun_one = (arg1,arg2,arg3) => {
+         return `${arg1}<=> ${arg2} <=>${arg3}`;
+     };
+
+     console.log(func_one());//undefined
+     console.log(func_one(null,null,null));//null, null ,null
+     console.log(func_one("React","MonogDb", "Veujs"));
+    
+     </script> -->
+
+
+<!-- 
+<script>
+    //outer function
+    let fun_one=()=>
+    {
+        //inner function
+return ()=> {
+           return "hello";
+        };
+        console.log(fun_one ); //defintion of outer function
+        console.log(fun_one()); //defnition of inner function
+        console.log(fun_one()());//output of inner func . "hello"
+    };
+</script> -->
+
+<!-- 
+
+<script>
+
+//empty array
+let arr = [];
+
+for (let i=0; i<5; i++)
+{
+   arr.push(()=>{return "Hello"}
+   ); 
+};
+
+console.log(arr.length);//5
+arr.forEach((element,index)=>{
+  console.log(element());
+
+});
+</script> -->
+
+
+
+<!-- Rest Paramters in functions 
+
+    we will store more than 1 value in func argument.
+
+    - we will represent rest parameter with the hlp of "..."
+    - "..." operator is called spread operator.
+    - "..." operator introduced in Es6.
+-->
+
+
+
+<!-- 
+<script>
+
+function fun_one(...arg1){
+  
+    console.log(arg1);
+};
+
+// ***************Interviews Questions:*************
+fun_one(10,20,30,40,50,60);
+fun_one("Angular","Nodejs","MongoDb");
+fun_one(); // [] empty array.
+fun_one(undefined, undefined, undefined);
+
+fun_one(null,null,null);
+</script> -->
+
+
+
+<!-- <script>
+    //Syntax error
+    //Rest parameters can be only one not two..this is erro
+ function fun_one(...arg1,...arg2) {
+
+
+ }; 
+    </script> -->
+
+
+
+
+    <!-- <script>
+       
+        function fun_one1(...arg2,arg1){
+          // error
+          //Rest paramater must be last formal paramater  
+        };
+         //no error
+    function fun_one(arg1,...arg2){
+
+    };
+
+    
+    </script> -->

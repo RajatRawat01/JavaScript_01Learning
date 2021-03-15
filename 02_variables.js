@@ -234,11 +234,29 @@ console.log(data);//100
 data=200; //not possible coz const data=100;
 
 
-const obj1 = {wish:"ReactJS"};
-console.log(obj1); //  
-obj1 = {}; // Assignment to constant variable.
+// const obj1 = {wish:"ReactJS"};
+// console.log(obj1); //  
+// obj1 = {}; // Assignment to constant variable.
 
-// complete change is not posible , internal object we can change.
+// // complete change is not posible , internal object we can change.
 
-obj1.wish = "Welcome to Es11";
-console.log(obj1);
+// obj1.wish = "Welcome to Es11";
+// console.log(obj1);
+
+
+const arr = [10,20,30,40,50];
+console.log(arr); // 10,20,30....
+//arr[];  TyprError
+
+//arr = [100,200,300,400,500]; Error 
+
+arr[0] = 100;
+arr[1] = 200;
+arr[2] = 300;
+arr[3] = 400;
+arr[4] = 500;
+
+console.log(arr);
+
+//direct change of values not possible, but we can change independdently.
+
