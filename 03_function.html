@@ -503,7 +503,7 @@ Acquiring properities fronm parent to child class called as "prototype".
 
 
 
-    <script>
+    <!-- <script>
 
 function class_one(){
 
@@ -525,4 +525,125 @@ class_two.prototype.var_two = function() {
 
     let obj = new class_two();
     console.log(obj.var_one,obj.var_two,obj.fun_one(),obj.fun_one());
-</script>
+</script> -->
+
+
+<!-- 
+<script>
+    function ParentF(){
+
+    };
+
+    ParentF.Prototype.mean = function(){
+        return "Mean Stack ....";
+    };
+
+    function ChildF(){
+
+    };
+
+    ChildF.prototype = Object.create(ParentF.prototype);
+    ChildF.prototype.mern = function(){
+
+        return "Mern Stack....";
+    };
+
+    function SubchildF(){
+
+    };
+
+    SubchildF.prototype = Object.create(ChildF.prototype);
+    SubchildF.prototype.mevn = function(){
+
+        return "MEVN stack ....";
+    };
+
+
+    let obj = new SubchildF();
+    console.log(obj.mean(),obj.mern(),obj.mevn());
+</script> -->
+
+
+
+
+
+<!--
+
+
+    Overiding Concept:
+    -------------------
+overriding parent class  functionality with child class functionality called as prototype overriding.
+
+
+-->
+
+<!-- 
+<script>
+//Parent class
+//Both function contain same func i.e dbfun()
+//Child class overdding the parent functionality
+function Parent(){
+
+    
+};
+
+Parent.prototype.dbFun = function(){
+    return "Data from OraclDB soon....";
+};
+
+function Child(){
+
+};
+
+Child.prototype = Object.create(Parent.prototype);
+Child.prototype.dbFun = function(){
+return "Data from MongoDB soon.....";
+};
+
+
+let obj = new Child();
+console.log(obj.db)
+    </script> -->
+
+
+
+    <!--
+
+Overloading :
+-------------
+
+Function Overloading------same function with diff arguments called
+as function overloading.
+
+    -->
+
+
+    <script>
+     
+     function class_one()
+     {
+
+     };
+
+
+     class_one.prototype.add = function(arg1,arg2)
+     {
+         return arg1+arg2;
+     };
+
+     class_one.prototype.add= function(arg1,arg2,arg3)
+     {
+          return arg1+arg2+arg3;
+     };
+
+     class_one.prototype.add= function(arg1,arg2,arg3,arg4)
+     {
+       return arg1+arg2+arg3+arg4;
+     };
+
+     let obj = new class_one();
+     console.log(obj.add(10,10));//NAN
+     console.log(obj.add(10,10,10));//NAN
+     console.log(obj.add(10,10,10,10));//40
+
+   </script>
