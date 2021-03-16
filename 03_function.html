@@ -367,7 +367,7 @@ Syntax:
     </script> -->
 
 
-
+<!-- 
     <script>
 
 for(var i=0; i<5; i++)
@@ -393,4 +393,136 @@ for(var i=0; i<5; i++)
     },5000);
 }) (i) // 0 1 2 3 4
 };
-</script>   
+</script>    -->
+
+
+
+<!--
+
+Constructor Function:
+---------------------
+
+-We will create classes like structures by using "Constructor funtion"
+- in constructor functions all the memmbers (variables ^ functions)
+   starts with "this" keyword.
+
+-  we will create object to the constructor function by using "new" keyword.
+
+-->
+
+<!-- 
+<script>
+function class_one(){
+  this.sub_one = "Angualr11";
+  this.sub_two = "NodJs";
+  this.sub_thre = "MongoDB";
+};
+
+//create object to class_one
+
+let obj = new class_one();
+
+console.log(obj.sub_one , obj.sub_two, obj.sub_thre); // 
+</script> -->
+
+
+
+
+
+<!-- <script>
+//3 constructor paramaters
+function class_one(arg1, arg2, arg3){
+this.sub_one = arg1;
+this.sub_two = arg2;
+this.sub_three = arg3;
+
+};
+
+let obj1= new class_one("Angular11","NodeJs","MongoDb");
+console.log(obj1.sub_one,obj1.sub_two,obj1.sub_three);
+
+const obj2 = new class_one("ReactKs","Denp","DB");
+console.log(obj2.sub_one,obj2.sub_two,obj2.sub_three);
+
+// we can creeate n objects---> 
+<!-- obj1, obj2 , obj3 ...objn -->
+
+<!-- </script> --> 
+<!-- 
+
+<script>
+
+function class_one(){
+    this.getSubOne = function(){
+        return "ReactJs";
+    };
+
+    this.getSubTwo = function(){
+        return "NodeJs";
+    };
+
+    this.getSubThree = function(){
+        return "MongoDb";
+    };
+};
+
+let obj = new class_one();
+console.log(obj.getSubOne(),obj.getSubTwo(),obj.getSubThree() );
+</script> -->
+
+
+<!--
+
+Inheritance- 
+-------------
+Acquiring properities fronm parent to child class called as "prototype".
+
+//Inhertiance dont wokrk for static variable , work for dynamic var
+-->
+
+<!-- 
+<script>
+    function class_one(){
+     
+
+    };
+
+    class_one.prototype.var_one = "Hello_1";
+
+    function class_two()
+    {
+        
+    };
+
+    class_two.prototype = Object.create(class_one.prototype); // Inheritance
+     class_two.prototype.var_two = "Hllo_2";
+      let obj = new class_two();
+      console.log(obj.var_one, obj.var_two);
+    </script> -->
+
+
+
+
+    <script>
+
+function class_one(){
+
+};
+
+class_one.prototype.var_one ="hllo1";
+class_one.prototype.fun_one = function(){
+    return "Hllo2";
+};
+
+function class_two(){
+
+};
+
+class_two.prototype = Object.create(class_one.prototype);
+class_two.prototype.var_two = function() {
+    return "Hllo4";
+    };
+
+    let obj = new class_two();
+    console.log(obj.var_one,obj.var_two,obj.fun_one(),obj.fun_one());
+</script>
