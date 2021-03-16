@@ -228,7 +228,7 @@ fun_one(null,null,null);
 
 
 
-
+<!-- Named functions, not arrow functions-->
     <!-- <script>
        
         function fun_one1(...arg2,arg1){
@@ -242,3 +242,155 @@ fun_one(null,null,null);
 
     
     </script> -->
+
+<!-- 
+
+    <script>
+
+        function fun_one(arg1,...arg2)
+        {
+            console.log(arg1,arg2);
+
+        };
+
+        fun_one("Hello1"); //Hello_1 []
+        fun_one(); //undefind []
+        fun_one("Hello_1","Hello_2","|Hello_3"); //Hello_1 (2), arg2---> 0st postion---> Hello_2 , arg2--->1st position---> Hello_3
+        fun_one(undefined,undefind); //undefined [undefined]
+     <!-- position of rest parameter should always be last.  -->
+      </script> -->
+
+
+
+      <!-- 
+          Default parameter in functions
+
+
+          -while defining function , we will assign paramters with default values.
+          - this concept introduced in ES6
+          -we can have more than one default paramters.
+        -->
+<!-- 
+        <script>
+ function fun_one(arg1="ReactJs",arg2="NodeJs",arg3="MongoDb")
+ {
+   console.log(arg1, arg2, arg3);
+ }
+
+ fun_one(); 
+ fun_one("Angular11"); // Angular11 Nodejs Mongodb
+fun_one(undefined,undefined,undefined); //ReactJs Nodejs 
+fun_one(null,null,null); //null,null,null
+fun_one(undefined, undefined,Deno.js); // ReactJs, NodeJs, Deno.js
+
+            </script> -->
+
+<!-- 
+<script>
+    //arg1 is undefined , arg2 is default paramter with empty arr and arg3 default paramter with empty json
+    function fun_one(arg1,arg2=[],arg3={}){
+        console.log(arg1,arg2,arg3);
+    };
+
+    fun_one();
+    fun_one("Hello"_1); //Hello_1, [] , {}
+    fun_one("Hello_1",["Hello_2"],{ky1:"Hello_3"});
+    fun_one(undefined, undefined, undefined);
+    fun_one(null,null,null);//null, null,null
+</script>             -->
+
+<!-- 
+<script>
+ 
+  function fun_one(arg1,arg2="Hello_2",...arg3){
+      console.log(arg1,arg2,arg3);
+
+  };
+
+  fun_one(); //undefined "Hello_2" []
+  fun_one("Hello_1"); //Hello_1, Hello_2 []
+  fun_one("Hello_1", undefined,"Hello_3"); // Hello_1 , Hello_2 , [hello_3]
+ fun_one(null, null, null); //null, null, [null]
+
+</script> -->
+
+
+
+
+
+
+<!--
+
+IIFE 
+
+- Immidiate Invokable Functional Exprssion.
+- IIFE introduced in ES9.
+- IIFE functions also called as self invokable functions.
+- no need to call function , it call automatically.
+
+
+Syntax:
+--------
+
+1. ((arg1,arg2,arg3,.....)=> {
+    //business logic
+}) (param1, param2,param3....)
+
+-->
+<!-- 
+<script>
+
+ (()=>{
+     console.log("Welcome to IIFE");
+ }) (); // Welcone to IIFE
+    </script> -->
+
+<!-- 
+    <script>
+
+((arg1, arg2,arg3)=>{
+
+    console.log(arg1,arg2,arg3);
+
+}) ("Angular","Node","MongoDb");
+        </script> -->
+
+<!-- 
+    <script>
+    (()=>{
+
+       return `${arg1}<=>${arg2}<=>${arg3}`; 
+    }
+    
+    )("ReactJs","deno","Mongodb");
+    console.log(res);
+    </script> -->
+
+
+
+    <script>
+
+for(var i=0; i<5; i++)
+{
+ //console.log(i);
+ //want to print i after 5se . how ?
+
+//  setTimeout(()=> {
+//      console.log(i);
+//  },5000);
+// };
+// Excpected : 0 1 2 3 4 (after 5 sec)
+// Output : 5
+
+//How to overCome this problem
+//1. Let keyword
+// 2. IIFE 
+
+((i)=>{
+
+    setTimeout(()=>{
+        console.log(i);
+    },5000);
+}) (i) // 0 1 2 3 4
+};
+</script>   
