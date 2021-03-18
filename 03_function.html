@@ -616,7 +616,7 @@ Function Overloading------same function with diff arguments called
 as function overloading.
 
     -->
-
+<!-- 
 
     <script>
      
@@ -646,4 +646,120 @@ as function overloading.
      console.log(obj.add(10,10,10));//NAN
      console.log(obj.add(10,10,10,10));//40
 
-   </script>
+    -->
+
+
+    <!--
+
+Generator Functions:
+=====================
+
+- it is used to control the flow of execution inside the functional call, then we will choose Generators.
+- Generator Functions will prefix with "*"
+-inside Generator functions, each function will prefix with "yield"
+
+
+Function fun_one()
+{
+    //There are 100 lins of code, but I want to execute any one line only..
+
+    
+};
+    -->
+<!-- 
+    <script>
+function *fun_one(){
+yield "Hello)_1";
+yield "Hello_2";
+yield "Hello_3";
+//yield will hold the flow of execution.
+yield "Hello_4";
+
+let cursor = fun_one();
+
+console.log(cursor.next());
+console.log(cursor.next());
+console.log(cursor.next());
+console.log(cursor.next());
+console.log(cursor.next());
+console.log(cursor.next());
+}
+
+        </script> -->
+<!-- 
+
+ <script>
+
+     function *fun_one(){
+         yield "Hello_1";
+     };
+
+     function *fun_two(){
+        yield "Helo_2";
+     };
+
+     function *fun_thre(){
+   yield "Hello_3";
+     };
+ 
+
+     function *my_fun(){
+         yield *fun_two();
+         yield *fun_three();
+         yield *fun_one();
+     };
+
+     let cursor = my_fun();
+     console.log(cursor.next()); //to run 707 lline
+     console.log(cursor.next());//708
+     console.log(cursor.next());//709
+     console.log(cursor.next());//undefined true
+
+
+     </script>; -->
+
+
+<!-- 
+     <script>
+
+function *fun_one(){
+
+
+    yield 100;
+    yield 200;
+    yield 300;
+    yield "Hello";
+    yield 400; // it will not execute after return statement.
+};
+
+let cursor = fun_one();
+
+console.log(cursor.next() );
+console.log(cursor.next()) ;
+console.log(cursor.next()) ;
+console.log(cursor.next()) ;
+</script> -->
+
+
+
+<!--
+
+    Optional Parameters.
+    --------------------
+
+    - while calling the functions, few parameters are optional.
+    - introduced in ES6 version.
+    - We will represent Optional Parameter by using "?".
+    - Default value of optional paramter is "undefined".
+    - it will work in TypeScript environment only , not EJS env.
+    - we will save "TS" with ".ts" extension.
+
+    = conversion of "TyepScript" to equivalent JS called as "Transpilation".
+    - "tsc" is the tool , used to perform the "transpilation".
+    - "tsc" stands for TypeScript Compiler.
+    
+
+===> we will install typeScript by following command.
+=====> npm install -g typescript
+version - 4.13
+-->
