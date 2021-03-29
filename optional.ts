@@ -1,14 +1,14 @@
 // function fun_one(arg1?:string,arg2?:string,arg3?:string):void{
 
-//     console.log(arg1,arg2,arg3);   
-// };
+// console.log(arg1,arg2,arg3);   
+//  };
 
-// fun_one();
-// fun_one("Angular","NodeJs","MongoDB");
-// fun_one("ReactJs");
-// fun_one(undefined,"Deno");
-// fun_one(undefined, undefined, undefined);
-// fun_one(null,null,null);
+// // fun_one();
+//  //fun_one("Angular","NodeJs","MongoDB");
+//  //fun_one("ReactJs");
+//  fun_one(undefined,"Deno");
+//  fun_one(undefined, undefined, undefined);
+//  fun_one(null,null,null);
 
 //optional with regular
 //in combination of optional with normal paramter should be in last position.
@@ -39,23 +39,23 @@
 
 
 
-// function fun_one(arg1:any,arg2:any="Hello_2",arg3?:any,...arg4:any):void{
+//  function fun_one(arg1:any,arg2:any="Hello_2",arg3?:any,...arg4:any):void{
 
 //     console.log(arg1, arg2, arg3, arg4);
 
-// };
+//  };
 
-//fun_one();
+// fun_one();
 
-//fun_one("Hello_1");
+// fun_one("Hello_1");
 
-//fun_one("Hello",undefined,"Hello_3","Hello_4");
-
-
-// fun_one(undefined,undefined,undefined,undefined);
-// //bacuse of undefined arg2 will not change..
+// fun_one("Hello",undefined,"Hello_3","Hello_4");
 
 
+//  fun_one(undefined,undefined,undefined,undefined);
+// // bacuse of undefined arg2 will not change..
 
-// fun_one(null,null,null,null);
-//because of null at arg2 , hello_2 will become null.
+
+
+//  fun_one(null,null,null,null);
+// //because of null at arg2 , hello_2 will become null.

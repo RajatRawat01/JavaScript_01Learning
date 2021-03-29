@@ -1,12 +1,12 @@
 <!-- function
----------
+----------------
 
 - particular business logic called as function.
 - function are used to reuse the business.
 - we have following types of functions upto ES11.
 
 1.) Named functions
-2.) Anonymous functions/ Arro Funtions/ Fat Arrow functions/ Callback functions
+2.) Anonymous functions/ Arrow Funtions/ Fat Arrow functions/ Callback functions
 / lambda functions.
 3.) Rest Parameters in Functions.
 4.) Optional Parameters is Functions.
@@ -41,14 +41,11 @@ functionname(parameters)
 
     };
 
-    <!-- console.log(fun_one);//---> function definition
+     console.log(fun_one);  //___> function definition
 
-    console.log(fun_one());// output -->
+    console.log(fun_one());   // output ___>
 
-
-
-
-<!-- </script>  -->
+ </script>   -->
 
 
 
@@ -64,8 +61,8 @@ console.log(fun_one(null,null,null));
 console.log(fun_one("Anu","DB", "Veu"));
 
  </script>    -->
-<!-- 
-<script>
+ 
+<!-- <script>
 function func_one()
 {
     return fun_two;
@@ -75,15 +72,13 @@ function fun_two()
     return "Hello";
 };
 console.log(fun_one() ()); //hello 
-  </script> -->
+  </script>  -->
 <!-- 
-
-
-<script> 
+<script>
 
 let arr = [];
 
-function fun_one();
+function fun_one()
 {
     return "Hello";
 };
@@ -100,7 +95,7 @@ arr.forEach((element,index)=> {
     console.log(element());
 });
 //console.log(arr[0](), );
-</script> -->
+</script>  -->
 
 <!-- 
 Anonomous function
@@ -150,8 +145,8 @@ variablename()
      </script> -->
 
 
-<!-- 
-<script>
+
+<!-- <script>
     //outer function
     let fun_one=()=>
     {
@@ -163,27 +158,27 @@ return ()=> {
         console.log(fun_one()); //defnition of inner function
         console.log(fun_one()());//output of inner func . "hello"
     };
-</script> -->
+</script>  -->
 
-<!-- 
+<!--  
 
 <script>
 
-//empty array
-let arr = [];
+// //empty array
+// let arr = [];
 
-for (let i=0; i<5; i++)
-{
-   arr.push(()=>{return "Hello"}
-   ); 
-};
+// for (let i=0; i<5; i++)
+// {
+//    arr.push(()=>{return "Hello"}
+//    ); 
+// };
 
-console.log(arr.length);//5
-arr.forEach((element,index)=>{
-  console.log(element());
+// console.log(arr.length);//5
+// arr.forEach((element,index)=>{
+//   console.log(element());
 
-});
-</script> -->
+// });
+ </script>  -->
 
 
 
@@ -195,14 +190,8 @@ arr.forEach((element,index)=>{
     - "..." operator is called spread operator.
     - "..." operator introduced in Es6.
 -->
-
-
-
-<!-- 
-<script>
-
+<!-- <script>
 function fun_one(...arg1){
-  
     console.log(arg1);
 };
 
@@ -211,41 +200,39 @@ fun_one(10,20,30,40,50,60);
 fun_one("Angular","Nodejs","MongoDb");
 fun_one(); // [] empty array.
 fun_one(undefined, undefined, undefined);
-
 fun_one(null,null,null);
-</script> -->
+</script>  -->
 
 
 
-<!-- <script>
+ <!-- <script>
     //Syntax error
     //Rest parameters can be only one not two..this is erro
  function fun_one(...arg1,...arg2) {
 
 
  }; 
-    </script> -->
+    </script>  -->
 
 
 
 <!-- Named functions, not arrow functions-->
-    <!-- <script>
+     <!-- <script>
        
-        function fun_one1(...arg2,arg1){
-          // error
-          //Rest paramater must be last formal paramater  
-        };
+        // function fun_one1(...arg2,arg1){
+        //   // error
+        //   //Rest paramater must be last formal paramater  
+        // };
          //no error
     function fun_one(arg1,...arg2){
 
     };
 
     
-    </script> -->
+    </script>  -->
 
-<!-- 
 
-    <script>
+    <!-- <script>
 
         function fun_one(arg1,...arg2)
         {
@@ -255,23 +242,21 @@ fun_one(null,null,null);
 
         fun_one("Hello1"); //Hello_1 []
         fun_one(); //undefind []
-        fun_one("Hello_1","Hello_2","|Hello_3"); //Hello_1 (2), arg2---> 0st postion---> Hello_2 , arg2--->1st position---> Hello_3
+        fun_one("Hello_1","Hello_2","Hello_3"); //Hello_1 (2), arg2  0st postion __ Hello_2 , arg2___1st position___ Hello_3
         fun_one(undefined,undefind); //undefined [undefined]
-     <!-- position of rest parameter should always be last.  -->
-      </script> -->
-
-
+     //position of rest parameter should always be last.  
+      </script>  -->
+    
 
       <!-- 
           Default parameter in functions
-
 
           -while defining function , we will assign paramters with default values.
           - this concept introduced in ES6
           -we can have more than one default paramters.
         -->
-<!-- 
-        <script>
+ 
+        <!-- <script>
  function fun_one(arg1="ReactJs",arg2="NodeJs",arg3="MongoDb")
  {
    console.log(arg1, arg2, arg3);
@@ -281,9 +266,9 @@ fun_one(null,null,null);
  fun_one("Angular11"); // Angular11 Nodejs Mongodb
 fun_one(undefined,undefined,undefined); //ReactJs Nodejs 
 fun_one(null,null,null); //null,null,null
-fun_one(undefined, undefined,Deno.js); // ReactJs, NodeJs, Deno.js
+fun_one(undefined, undefined,"Deno.js"); // ReactJs, NodeJs, Deno.js
 
-            </script> -->
+            </script>  -->
 
 <!-- 
 <script>
@@ -298,24 +283,17 @@ fun_one(undefined, undefined,Deno.js); // ReactJs, NodeJs, Deno.js
     fun_one(undefined, undefined, undefined);
     fun_one(null,null,null);//null, null,null
 </script>             -->
-
 <!-- 
 <script>
  
   function fun_one(arg1,arg2="Hello_2",...arg3){
       console.log(arg1,arg2,arg3);
-
   };
-
   fun_one(); //undefined "Hello_2" []
   fun_one("Hello_1"); //Hello_1, Hello_2 []
   fun_one("Hello_1", undefined,"Hello_3"); // Hello_1 , Hello_2 , [hello_3]
  fun_one(null, null, null); //null, null, [null]
-
-</script> -->
-
-
-
+</script>  -->
 
 
 
@@ -342,10 +320,11 @@ Syntax:
 
  (()=>{
      console.log("Welcome to IIFE");
- }) (); // Welcone to IIFE
+ })
+  (); // Welcone to IIFE
     </script> -->
-
 <!-- 
+
     <script>
 
 ((arg1, arg2,arg3)=>{
@@ -353,26 +332,26 @@ Syntax:
     console.log(arg1,arg2,arg3);
 
 }) ("Angular","Node","MongoDb");
-        </script> -->
+        </script>  -->
 
-<!-- 
-    <script>
+    <!-- <script>
     (()=>{
 
        return `${arg1}<=>${arg2}<=>${arg3}`; 
     }
     
     )("ReactJs","deno","Mongodb");
-    console.log(res);
-    </script> -->
 
+    //console.log(res);
+    </script> 
+ -->
 
-<!-- 
+<!--  
     <script>
 
 for(var i=0; i<5; i++)
 {
- //console.log(i);
+ console.log(i);
  //want to print i after 5se . how ?
 
 //  setTimeout(()=> {
@@ -382,8 +361,8 @@ for(var i=0; i<5; i++)
 // Excpected : 0 1 2 3 4 (after 5 sec)
 // Output : 5
 
-//How to overCome this problem
-//1. Let keyword
+// How to overCome this problem
+// 1. Let keyword
 // 2. IIFE 
 
 ((i)=>{
@@ -393,8 +372,8 @@ for(var i=0; i<5; i++)
     },5000);
 }) (i) // 0 1 2 3 4
 };
-</script>    -->
-
+</script>    
+ -->
 
 
 <!--
@@ -409,8 +388,8 @@ Constructor Function:
 -  we will create object to the constructor function by using "new" keyword.
 
 -->
-
 <!-- 
+
 <script>
 function class_one(){
   this.sub_one = "Angualr11";
@@ -423,13 +402,13 @@ function class_one(){
 let obj = new class_one();
 
 console.log(obj.sub_one , obj.sub_two, obj.sub_thre); // 
-</script> -->
+</script>  -->
 
 
+<!-- 
 
 
-
-<!-- <script>
+<script>
 //3 constructor paramaters
 function class_one(arg1, arg2, arg3){
 this.sub_one = arg1;
@@ -447,7 +426,7 @@ console.log(obj2.sub_one,obj2.sub_two,obj2.sub_three);
 // we can creeate n objects---> 
 <!-- obj1, obj2 , obj3 ...objn -->
 
-<!-- </script> --> 
+ <!-- </script>   --> 
 <!-- 
 
 <script>
@@ -468,8 +447,7 @@ function class_one(){
 
 let obj = new class_one();
 console.log(obj.getSubOne(),obj.getSubTwo(),obj.getSubThree() );
-</script> -->
-
+</script>  -->
 
 <!--
 
@@ -479,8 +457,8 @@ Acquiring properities fronm parent to child class called as "prototype".
 
 //Inhertiance dont wokrk for static variable , work for dynamic var
 -->
-
 <!-- 
+ 
 <script>
     function class_one(){
      
@@ -498,7 +476,7 @@ Acquiring properities fronm parent to child class called as "prototype".
      class_two.prototype.var_two = "Hllo_2";
       let obj = new class_two();
       console.log(obj.var_one, obj.var_two);
-    </script> -->
+    </script>  -->
 
 
 
@@ -526,9 +504,9 @@ class_two.prototype.var_two = function() {
     let obj = new class_two();
     console.log(obj.var_one,obj.var_two,obj.fun_one(),obj.fun_one());
 </script> -->
-
-
 <!-- 
+
+
 <script>
     function ParentF(){
 
@@ -561,7 +539,7 @@ class_two.prototype.var_two = function() {
 
     let obj = new SubchildF();
     console.log(obj.mean(),obj.mern(),obj.mevn());
-</script> -->
+</script>  -->
 
 
 
@@ -602,8 +580,8 @@ return "Data from MongoDB soon.....";
 
 
 let obj = new Child();
-console.log(obj.db)
-    </script> -->
+console.log(obj.dbFun)
+    </script>  -->
 
 
 
@@ -616,8 +594,8 @@ Function Overloading------same function with diff arguments called
 as function overloading.
 
     -->
-<!-- 
 
+<!-- 
     <script>
      
      function class_one()
@@ -643,11 +621,11 @@ as function overloading.
 
      let obj = new class_one();
      console.log(obj.add(10,10));//NAN
-     console.log(obj.add(10,10,10));//NAN
-     console.log(obj.add(10,10,10,10));//40
+     ///console.log(obj.add(10,10,10));//NAN
+     //console.log(obj.add(10,10,10,10));//40
 
-    -->
-
+    
+    </script> -->
 
     <!--
 
@@ -665,11 +643,12 @@ Function fun_one()
 
     
 };
-    -->
-<!-- 
+    
+
+
     <script>
 function *fun_one(){
-yield "Hello)_1";
+yield "Hello_1";
 yield "Hello_2";
 yield "Hello_3";
 //yield will hold the flow of execution.
@@ -681,13 +660,12 @@ console.log(cursor.next());
 console.log(cursor.next());
 console.log(cursor.next());
 console.log(cursor.next());
-console.log(cursor.next());
-console.log(cursor.next());
+
 }
 
         </script> -->
-<!-- 
 
+<!-- 
  <script>
 
      function *fun_one(){
@@ -698,7 +676,7 @@ console.log(cursor.next());
         yield "Helo_2";
      };
 
-     function *fun_thre(){
+     function *fun_three(){
    yield "Hello_3";
      };
  
@@ -716,7 +694,7 @@ console.log(cursor.next());
      console.log(cursor.next());//undefined true
 
 
-     </script>; -->
+     </script> -->
 
 
 <!-- 

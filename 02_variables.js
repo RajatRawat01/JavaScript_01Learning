@@ -22,9 +22,9 @@ var wish = `Welcome to ${sub}`;
 
 console.log(wish);
 
-var sub_one = `ReactJs`;
-var sub_two = `NodeJS`;
-var sub_three = `MongoDB`;
+var sub_one = "ReactJs";
+var sub_two = "NodeJS";
+var sub_three = "MongoDB";
 
 var mern = `MERN Stack : ${sub_one } <=> ${sub_two} <=> ${sub_three}`
 console.log(mern);
@@ -87,7 +87,7 @@ console.log(undefined == null);
 // mobile not working = not working return true.
 console.log(undefined === null);
 // not working = not wokring
-// mobile = not mpbile //mismatch so return false.
+// mobile = not mobile //mismatch so return false.
 
 //array
 //collection of indexed and hetrogenous elements is called array.
@@ -199,8 +199,7 @@ console.log(data);
 var data2 = 100; // gives undefined.---> var:undefined---->this error is called variable hoisting
 
 //we can overcome variable hoisting by let keyword.
-//accessing the variables with undefined value, bfore its declaration and initialixation called as variable hoisting.
-
+//accessing the variables with undefined value, before its declaration and initialixation called as variable hoisting.
 
 
 for(var i=0; i<5; i++)
