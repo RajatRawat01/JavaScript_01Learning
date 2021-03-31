@@ -217,4 +217,7 @@ my_func();
      => GET
 
      => POST
+
+
+     http://localhost:3000/prducts =---> Consume this url using async comm.
 */
