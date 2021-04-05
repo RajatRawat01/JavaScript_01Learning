@@ -84,7 +84,7 @@ fun_one((arg1)=>{console.log(arg1) },
          (arg1)=>{console.log(arg1)});
 
          */
-
+/*
 
          function add(num,callback){
              return callback(num+5,false);
@@ -109,9 +109,51 @@ fun_one((arg1)=>{console.log(arg1) },
               }
          });
 
-
+*/
 
          //callback hell--->tightly coupled code ...> 2nd is dependandt on 1 and vice versa..
          //Inreal time we prefer loosely coupled code, so we use Promises.
 
 
+
+         function add(num){
+             return new Promise((resolve,reject)=>{
+                 resolve(num+5);
+             });
+         };
+
+         function sub(num){
+            return new Promise((resolve,reject)=>{
+                resolve(num-3);
+            });
+        };
+
+        function mul(num){
+            return new Promise((resolve,reject)=>{
+                resolve(num*2);
+            });
+        };
+
+        function div(num){
+            return new Promise((resolve,reject)=>{
+                resolve((num/2)-2);
+            });
+        };
+
+        function add(num){
+            return new Promise((resolve,reject)=>{
+                resolve(num+5);  });
+        };
+
+
+        //consume all promises.
+
+        async function consume(){
+          let addRes =   await add(5);
+          let subres = await sub(addRes);
+          let mulRes = await mul(subRes);
+          let final_res = await div(mulRes);
+          console.log(final_res);
+        };
+
+     consume();
