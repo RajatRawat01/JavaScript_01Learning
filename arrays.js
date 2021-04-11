@@ -263,4 +263,104 @@ console.log(arr3.slice(-10,-9)); //100
 // Interview Questions...
   // What is diff between splice() and slic()
 
+/*
+    //copyWithin()---> Shifting of elements
+    let arr1 = [10,20,30,40,50,60,70,80,90,100];
+    arr1.copyWithin(2);
+    console.log(arr1);   //[10,20,10,20,30,40,50,60,70,80]
+    let arr2 = [10,20,30,40,50,60,70,80,90,100];
+    arr2.copyWithin(5);
+    console.log(arr2);  //[10,20,30,40,50,10,20,30,40,50]
+    let arr3 = [10,20,30,40,50,60,70,80,90,100];
+    arr3.copyWithin(0);
+    console.log(arr3);   //[10,20,30,40,50,60,70,80,90,100]
+    let arr4 = [10,20,30,40,50,60,70,80,90,100];
+    arr4.copyWithin(2,5);
+    console.log(arr4);    //[10,20,60,70,80,90,100,80,90,100]
+    let arr5 = [10,20,30,40,50,60,70,80,90,100];
+    arr5.copyWithin(3,8);
+    console.log(arr5);   //[10,20,30,90,100,60,70,80,90,100]
+    let arr6 = [10,20,30,40,50,60,70,80,90,100];
+    arr6.copyWithin(2,-4);
+    console.log(arr6);    //[10,20,70,80,90,100,70,80,90,100]
+    let arr7 = [10,20,30,40,50,60,70,80,90,100];
+    arr7.copyWithin(2,4,7);
+    console.log(arr7);    //[10,20,50,60,70,60,70,80,90,100]
+*/
+
+/*
+    //includes()
+    //it is used to search particular element present in array
+    //this function is boolean function
+    let arr = [10,20,30,40,50];
+    console.log(
+        arr.includes(30)
+    );   //true
+    console.log(
+        arr.includes(1)
+    );   //false
+    console.log(
+        ["Angular","NodeJS","ReactJS"].includes("NodeJS")
+    );   //true
+*/
+
+
+/*
+    //sort()
+    //it is used to sort the elements either ascending order or decending order
+    let arr1 = [10,50,20,40,30];
+    console.log(
+        arr1.sort((num1,num2)=>{
+            return num1-num2;
+        })
+    );     //[ 10, 20, 30, 40, 50 ]
+    console.log(
+        arr1.sort((num1,num2)=>{
+            return num2-num1;
+        })
+    );    //[ 50, 40, 30, 20, 10 ]
+    //num1-num2   (ascending order)
+    //num2-num1   (decending order)
+    console.log(
+        [9,-1,2,6,2].sort((num1,num2)=>{
+            return num1-num2;
+        })[2]
+    );  
+    //[-1,2,2,6,9]
+    console.log(
+        [9,-1,2,6,2].sort((num1,num2)=>{
+            return num2-num1;
+        })[1]
+    );  //6
+*/
+
+/*
+    //indexOf()
+    //won't create indexes to repeated elements
+    let arr = [10,20,10,30,10,20];
+    arr.forEach((element,index)=>{
+        console.log(arr.indexOf(element));
+    });   //0 1 0 3 0 1
+    let arr2 = [10,100,1000,10,1000,55,10,100,55,40,10,1000];
+    arr2.forEach((element,index)=>{
+        console.log( arr2.indexOf(element) );
+    });  //0 1 0 1 2 0 2 5 0 1 5 9 0 2
+*/
+
+
+/*
+    let arr = [10,20,30,10,20,30];
+    console.log(
+        arr.filter((element,index)=>{
+            return arr.indexOf(element) === index;
+        })
+    );    //[ 10, 20, 30 ]
+    let arr1 = [-1,10,-1,16,20,16,28];
+    console.log(
+        arr1.filter((element,index)=>{
+            return arr1.indexOf(element) == index;
+        })
+    );   //[ -1, 10, 16, 20, 28 ]
+*/
+
 
