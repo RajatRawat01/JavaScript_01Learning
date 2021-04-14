@@ -363,4 +363,104 @@ console.log(arr3.slice(-10,-9)); //100
     );   //[ -1, 10, 16, 20, 28 ]
 */
 
+/*
+//repeat()
+console.log("10".repeat(2));
+console.log("Hello".repeat(5));
+*/
 
+
+/*
+ lastIndexOf() 
+let arr = [10,20,30,40,50,10,20,30,40,50];
+console.log(arr.lastIndexOf(10)); //5
+console.log(arr.lastIndexOf(20)); //6
+console.log(arr.lastIndexOf(60)); //-1
+*/
+
+//converting string to array.
+/*
+console.log(
+    Array.from("Hello")
+    );
+ 
+    console.log(
+        Array.from("Hello").reverse().toString()
+        );    
+
+        //to remove commas.
+
+
+        console.log(
+            Array.from("Hello").reverse().join("")
+            );    
+    
+*/
+
+/*
+console.log("Hello".length);  //7
+console.log("Hllo".trim().length); //5 
+//trim() ---> remove wide spaces
+
+console.log(" Hello ".trimStart().length ); //6
+console.log(" Hello ".trimend().length ); //6
+*/
+
+
+//console.log("Hello".padStart(10,"*"));   //****Hello
+//console.log("Hello".padStart(20,"ReactJs")); 
+
+/*
+
+console.log(
+    "Hello  Hello".split(" ")
+); //['Hello', 'Hello' ]
+
+console.log(
+    "He,l,l,o"
+);
+
+console.log(
+    "He,l,/,l,o".replace(/,/g,"").replace("/","").split()
+);
+*/
+
+/*
+console.log(
+    "Welcome to ReactJs".substr(0,7)
+); // Welcome
+
+console.log(
+    "Welcome to ReactJs".substr(8,2)
+); // to
+
+console.log(
+    "Welcome to ReactJs".substr(11,7)
+); // ReactJs
+
+console.log(
+ "Hello Welcome to Angular11".substring(0,5),
+ "Hello Welcome to Angular11".substring(6,13)
+);
+*/
+
+// INTERVIEW QUESTIONS*************
+
+//DIFFERENCE B/W SUBSTR() & SUBSTRING() 
+
+
+//for...in
+//it used to iterate only json objects.
+/*let obj = {"key1":"Hello_1",
+             "key2":"Hello_2",
+             "key3": "Hello_3"};
+
+             for(let key in obj){
+                 console.log(key);
+                 console.log(obj [ key ]);
+             };
+*/
+
+for (let x of [10,20,30,40,50]){
+    console.log(x);
+};
